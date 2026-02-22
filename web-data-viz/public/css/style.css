@@ -1,0 +1,289 @@
+@import url('https://fonts.cdnfonts.com/css/centrale-sans-regular');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Centrale Sans Regular', sans-serif;
+    background: linear-gradient(180deg, #F2F6FD 0%, #BFD1EB 100%);
+}
+
+/* -------------------------- Start HEADER --------------------------*/
+.header {
+    width: 100%;
+    height: 139px;
+    background: #4169E1;
+    border-bottom: 0.5em solid transparent;
+    border-image: linear-gradient(to top right, #d8b248, #ffffff) 1;
+}   
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+    h1 {
+        color: #ffffff;
+        font-weight: bolder;
+    };
+    img {
+        width: 4vw;
+        height: 9vh;
+        margin-right: 2em
+    };
+
+}
+.agora {
+  font-weight: 800;
+  color: #d8b248;
+}
+
+.navbar {
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #ffffff;
+    margin-right: 5em;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.1rem;
+    }
+}
+/* --------------------------- End HEADER ---------------------------*/
+
+/* -------------------------- Start FOOTER --------------------------*/
+.footer {
+    width: 100%;
+    height: 16rem;
+    background: #2260E1;
+    color: #ffffff;
+    display: flex;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_left {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+}
+
+.nossos {
+    flex-direction: column;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 2rem;
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+    img {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+}
+
+.footer .footer_right {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+.footer .dados{
+    margin: 2rem 5rem 0 2rem;
+
+}
+
+.footer_linha {
+    width: 3px;
+    height: 15rem;
+    background-color: #ffffff;
+    border-radius: 3px;
+    align-self: center;
+}
+/* --------------------------- End FOOTER ---------------------------*/
+
+/* ------------------------- Start CADASTRO -------------------------*/
+/* Div msg_senha: */
+.msg_senha {
+  display: none;
+  background-color: #fff;
+  color: black;
+  width: 230px;
+  border-radius: 4px;
+  border: #ED145B 3px solid;
+  padding: 10px;
+  margin-right: 10%;
+  position: fixed;
+  top: 50%;
+  left: 73%;
+  z-index: 999;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+  }
+}
+
+/* Cadastro do Aquatech */
+
+.login {
+  height: 70vh;
+  background-image: linear-gradient(to top right, #2A76E8, #CBDAEF);
+  background-size: cover;
+  align-self: center;
+}
+
+.login .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  width: 50%;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: palevioletred;
+  flex-direction: column;
+  height: fit-content;
+  padding: 20px 0;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.formulario {
+  display: flex;
+  height: 90%;
+  width: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.formulario span {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.formulario input {
+  border: 2px solid #32b9cd;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.formulario select {
+  border: 2px solid #32b9cd;
+  background-color: white;
+  color: gray;
+  height: 36px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 5px 0;
+}
+
+.botao {
+  cursor: pointer;
+  font-family: "Barlow", sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ED145B;
+  width: 120px;
+  height: 30px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.loading-div {
+  width: 50px;
+  display: none;
+}
+
+.loading-div img {
+  height: 50px;
+  width: 50px;
+}
+
+.formulario .tipo_campo {
+  font-size: 20px;
+  font-weight: 600 !important;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  border: 2px solid #32b9cd;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn {
+  font-family: 'Centrale Sans Regular', sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #ED145B;
+  width: 120px;
+  align-self: center;
+  margin-top: 5px;
+}
+
+.loading-div {
+  width: 50px;
+  margin: auto;
+  display: none;
+}
+
+.loading-div img {
+  height: 50px;
+  width: 50px;
+}
+
+/* -------------------------- End CADASTRO --------------------------*/
